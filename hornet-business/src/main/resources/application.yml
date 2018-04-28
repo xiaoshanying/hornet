@@ -1,0 +1,11 @@
+server:
+  port: 18090
+
+#开发配置
+spring:
+  profiles:
+    active: dev
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka

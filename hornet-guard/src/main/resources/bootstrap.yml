@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: hornet-guard
+  profiles:
+    active: dev
+
+---
+# 开发环境配置
+spring:
+  profiles: dev
+logging:
+  file: log/hornet-guard.log
+
+---
+# 测试环境配置
+spring:
+  profiles: test
+logging:
+  file:
+
+---
+# 产品环境配置
+spring:
+  profiles: online
